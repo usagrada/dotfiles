@@ -1,0 +1,14 @@
+[user]
+	name = usagrada
+#	email = usagrada@users.noreply.github.com
+	email = usagrada.kind@gmail.com
+
+[pull]
+	ff = only
+	rebase = false
+[init]
+	defaultBranch = main
+[includeIf "gitdir:~/workspace/university/lab/"]
+  path = ~/.gitconfig.lab
+[core]
+	excludesfile = ~/.gitignore_global
