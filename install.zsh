@@ -1,10 +1,12 @@
 #!/bin/zsh
-# ln -s .zshrc ~/.zshrc
-# ln -s .zshenv ~/.zshenv
+
 echo "install zinit"
 which zinit >/dev/null 2>&1 && sh -c "$(curl -fsSL https://git.io/zinit-install)" || echo "already exist zinit"
 
-IGNORE_PATTERN="^\.(git)"
+IGNORE_PATTERN="^\.(git)$"
+
+echo "install homebrew"
+which brew >/dev/null 2>&1 && ch -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || echo "already exist homebrew"
 
 for dotfile in .??*; do
   [[ $dotfile =~ $IGNORE_PATTERN ]] && continue

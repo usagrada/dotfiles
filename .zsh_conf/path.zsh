@@ -18,5 +18,6 @@ typeset -U path PATH
 path=(
   /opt/homebrew/{bin,sbin}
   $path
+  /usr/local/{bin,sbin}
   /usr/{bin,sbin}
 )
