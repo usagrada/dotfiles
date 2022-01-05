@@ -21,11 +21,27 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
-zinit ice wait'0'; zinit light b4b4r07/enhancd
-zinit ice wait'0'; zinit light zsh-users/zsh-completions
-zinit ice wait'0'; zinit light zsh-users/zsh-autosuggestions
-zinit ice wait'0'; zinit light zsh-users/zsh-history-substring-search
-zinit ice wait'0'; zinit light zsh-users/zsh-syntax-highlighting
+zinit ice wait'0' lucid; zinit light b4b4r07/enhancd
+zinit ice wait'0' lucid; zinit light zsh-users/zsh-completions
+zinit ice wait'0' lucid; zinit light zsh-users/zsh-autosuggestions
+zinit ice wait'0' lucid; zinit light zsh-users/zsh-history-substring-search
+zinit ice wait'0' lucid; zinit light zsh-users/zsh-syntax-highlighting
+zinit ice from"gh-r" as"program" wait'0' lucid; zinit light junegunn/fzf
+zinit ice wait'0' lucid; zinit light atweiden/fzf-extras
+zinit ice wait lucid; zinit light 'wfxr/forgit'
+# BAT-EXTRAS
+zinit ice wait"1" as"program" pick"src/batgrep.sh" lucid
+zinit ice wait"1" as"program" pick"src/batdiff.sh" lucid
+zinit light eth-p/bat-extras
+alias rg=batgrep.sh
+alias bd=batdiff.sh
+alias man=batman.sh
+# LAZYGIT
+zinit ice lucid wait"0" as"program" from"gh-r" mv"lazygit* -> lazygit" atload"alias lg='lazygit'"
+zinit light 'jesseduffield/lazygit'
+
+zinit snippet https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh
+
 autoload -Uz compinit && compinit
 
 ## 補完で小文字でも大文字にマッチさせる
