@@ -4,5 +4,3 @@ zsh_conf=~/.zsh_conf
 . $zsh_conf/eval.zsh
 . $zsh_conf/alias.zsh
 . $zsh_conf/prompt.zsh
-
-source /Users/yu/.config/broot/launcher/bash/br
