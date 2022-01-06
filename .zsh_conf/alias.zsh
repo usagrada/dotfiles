@@ -2,10 +2,11 @@
 alias vi=nvim
 alias vim=nvim
 alias insider='code-insiders'
+
 if [[ $(command -v exa) ]]; then
-  alias e='exa --icons --git'
+  alias e='exa --git'
   alias l=e
-  alias ls=e
+  alias ls='exa --icons --git'
   alias ea='exa -a --icons --git'
   alias la=ea
   alias ee='exa -aahl --icons --git'
@@ -19,4 +20,4 @@ if [[ $(command -v exa) ]]; then
 fi
 
 alias grep='grep --color=always'
-alias bat='bat --theme=Visual Studio Dark+'
+alias bat='bat --theme="Visual Studio Dark+"'

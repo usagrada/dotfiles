@@ -12,7 +12,6 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
-alias brew="PATH=/opt/homebrew/bin:/opt/homebrew/sbin brew"
 
 typeset -U path PATH
 path=(
