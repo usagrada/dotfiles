@@ -10,6 +10,7 @@ setopt hist_ignore_all_dups     # ヒストリーに重複を表示しない
 setopt hist_save_no_dups        # 重複するコマンドが保存されるとき、古い方を削除する。
 setopt extended_history         # コマンドのタイムスタンプをHISTFILEに記録する
 setopt hist_expire_dups_first   # HISTFILEのサイズがHISTSIZEを超える場合は、最初に重複を削除します
+setopt auto_param_keys
 
 # fzf
 # Esc→t はすでに使われているので、 Esc→e に割り当てる(2つの単語を入れ替えたいときないが……)

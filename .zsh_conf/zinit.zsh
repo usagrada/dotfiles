@@ -29,6 +29,7 @@ zinit ice wait'1' lucid; zinit light zsh-users/zsh-autosuggestions
 zinit ice wait'1' lucid; zinit light zsh-users/zsh-history-substring-search
 # zinit ice wait'0' lucid; zinit light zsh-users/zsh-syntax-highlighting
 zinit ice wait'0' lucid; zinit light zdharma-continuum/fast-syntax-highlighting
+zinit ice wait'1' lucid; zinit light hlissner/zsh-autopair
 
 # git
 zinit ice as"completion"
