@@ -77,3 +77,9 @@ noremap <silent> あ a
 
 syntax enable
 colorscheme hybrid
+
+
+" 英字キーボード用
+" セミコロンとコロンを入れ替え（ノーマルモード）
+nnoremap ; :
+nnoremap : ;
