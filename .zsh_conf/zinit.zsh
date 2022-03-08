@@ -31,6 +31,8 @@ zinit ice wait'1' lucid; zinit light zsh-users/zsh-history-substring-search
 zinit ice wait'0' lucid; zinit light zdharma-continuum/fast-syntax-highlighting
 zinit ice wait'1' lucid; zinit light hlissner/zsh-autopair
 
+zinit ice wait'1' lucid; zinit light MenkeTechnologies/zsh-cargo-completion
+
 # git
 zinit ice as"completion"
 zinit snippet https://github.com/git/git/blob/master/contrib/completion/git-completion.zsh

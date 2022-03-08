@@ -6,10 +6,10 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/development/flutter/bin:$PATH"
 
 # c++
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+#export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 # clang
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+#export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 

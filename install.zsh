@@ -12,3 +12,10 @@ for dotfile in .??*; do
   [[ $dotfile =~ $IGNORE_PATTERN ]] && continue
   ln -sfnv "$(pwd)/$dotfile" "$HOME/$dotfile"
 done
+
+CONFIG_DIR=$(ls config)
+for config_dir in $CONFIG_DIR; do
+  [[ config_dir =~ $IGNORE_PATTERN ]] && continue
+  ln -sfnv "$(pwd)/config/$config_dir" "$HOME/.config/$config_dir"
+  ln -sfnv "$(pwd)/config/$config_dir" "$HOME/Library/Preferences/$config_dir"
+done
