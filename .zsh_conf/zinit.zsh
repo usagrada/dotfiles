@@ -39,7 +39,7 @@ zinit snippet https://github.com/git/git/blob/master/contrib/completion/git-comp
 zinit ice wait"1" lucid; zinit snippet OMZL::git.zsh
 zinit ice wait"1" lucid; zinit snippet OMZP::git
 zinit ice lucid wait"0" as"program" from"gh-r" mv"lazygit* -> lazygit" atload"alias lg='lazygit'"
-zinit light 'jesseduffield/lazygit'
+zinit ice wait'1' lucid; zinit light 'jesseduffield/lazygit'
 
 # docker
 zinit ice as"completion"
@@ -47,13 +47,16 @@ zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_
 zinit ice as"completion"
 zinit snippet https://github.com/docker/compose/blob/master/contrib/completion/zsh/_docker-compose
 
+# asdf
+zinit ice wait'0' lucid; zinit light asdf-vm/asdf
+
 # BAT-EXTRAS
 zinit ice wait"1" as"program" pick"src/batgrep.sh" lucid
 zinit ice wait"1" as"program" pick"src/batdiff.sh" lucid
 zinit light eth-p/bat-extras
-alias rg=batgrep.sh
+alias brg=batgrep.sh
 alias bd=batdiff.sh
-alias man=batman.sh
+alias bman=batman.sh
 
 ## 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
