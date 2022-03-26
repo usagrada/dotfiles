@@ -78,8 +78,27 @@ noremap <silent> あ a
 syntax enable
 colorscheme hybrid
 
-
 " 英字キーボード用
 " セミコロンとコロンを入れ替え（ノーマルモード）
 nnoremap ; :
 nnoremap : ;
+
+" if exists('g:vscode')
+  " function! s:GetMode()
+  "   if mode()[0] == 'i'
+  "     return 'i'
+  "   endif
+
+  "   if stridx('vV<c-v>', mode()) > -1
+  "     return 'v'
+  "   endif
+
+  "   return 'n'
+  " endfunction
+
+  " # VSCode extension
+  " if GetMode() == 'v'
+  "   inoremap <silent> い i
+  "   inoremap <silent> あ a
+  " endif
+" endif
