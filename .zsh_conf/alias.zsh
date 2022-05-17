@@ -3,6 +3,10 @@ alias vi=nvim
 alias vim=nvim
 alias insider='code-insiders'
 
+if [[ $(command -v satysfi-fmt) ]]; then
+  alias satysfi-fmt='satysfi-fmt -i 2'
+fi
+
 if [[ $(command -v exa) ]]; then
   alias e='exa --git'
   alias l=e
