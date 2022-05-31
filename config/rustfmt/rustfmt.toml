@@ -1,3 +1,1 @@
-[target.aarch64-apple-darwin]
-linker = "clang"
-rustflags = ["-Clink-arg=-fuse-ld=mold", "-Ctarget-cpu=native"]
+
