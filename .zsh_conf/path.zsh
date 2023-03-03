@@ -1,13 +1,9 @@
-# golang
-export GOENV_DISABLE_GOPATH=1
-export GOPATH="$HOME/go"
-export PATH="$HOME/go/bin:$PATH"
-
 # c++
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 LDFLAGS+=" -L/opt/homebrew/opt/binutils/lib"
 CPPFLAGS+=" -I/opt/homebrew/opt/binutils/include"
+LDFLAGS+=" -L/opt/homebrew/lib"
 
 # clang
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
