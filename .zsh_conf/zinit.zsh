@@ -42,10 +42,10 @@ zinit ice lucid wait"0" as"program" from"gh-r" mv"lazygit* -> lazygit" atload"al
 zinit ice wait'1' lucid; zinit light 'jesseduffield/lazygit'
 
 # docker
-zinit ice as"completion"
-zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
-zinit ice as"completion"
-zinit snippet https://github.com/docker/compose/blob/master/contrib/completion/zsh/_docker-compose
+# zinit ice as"completion"
+# zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
+# zinit ice as"completion"
+# zinit snippet https://github.com/docker/compose/blob/master/contrib/completion/zsh/_docker-compose
 
 # asdf
 zinit ice wait'0' lucid; zinit light asdf-vm/asdf
