@@ -47,8 +47,6 @@ zinit ice wait'1' lucid; zinit light 'jesseduffield/lazygit'
 # zinit ice as"completion"
 # zinit snippet https://github.com/docker/compose/blob/master/contrib/completion/zsh/_docker-compose
 
-# asdf
-zinit ice wait'0' lucid; zinit light asdf-vm/asdf
 
 # BAT-EXTRAS
 zinit ice wait"1" as"program" pick"src/batgrep.sh" lucid
